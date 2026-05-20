@@ -1,0 +1,99 @@
+{
+    "emergency_resources": {
+        "timestamp": "2025-05-15T14:45:00",
+        "city": "Islamabad",
+        "units": [
+            {
+                "unit_id": "AMB-04",
+                "type": "Ambulance",
+                "status": "AVAILABLE",
+                "current_location": "PIMS Hospital, G-8",
+                "distance_to_G10_km": 3.2
+            },
+            {
+                "unit_id": "AMB-07",
+                "type": "Ambulance",
+                "status": "AVAILABLE",
+                "current_location": "Rescue Station, G-11",
+                "distance_to_G10_km": 2.1
+            },
+            {
+                "unit_id": "AMB-12",
+                "type": "Ambulance",
+                "status": "AVAILABLE",
+                "current_location": "Poly Clinic Hospital, G-6",
+                "distance_to_G10_km": 4.5
+            },
+            {
+                "unit_id": "RES-02",
+                "type": "Rescue Team",
+                "status": "AVAILABLE",
+                "current_location": "Rescue 1122, G-10",
+                "distance_to_G10_km": 0.8
+            },
+            {
+                "unit_id": "PUMP-01",
+                "type": "Water Pump Truck",
+                "status": "AVAILABLE",
+                "current_location": "CDA Depot, I-9",
+                "distance_to_G10_km": 5.5
+            },
+            {
+                "unit_id": "PUMP-02",
+                "type": "Water Pump Truck",
+                "status": "ON_DUTY",
+                "current_location": "F-10, Islamabad",
+                "distance_to_G10_km": 4.0
+            },
+            {
+                "unit_id": "POLICE-G10",
+                "type": "Traffic Police Unit",
+                "status": "AVAILABLE",
+                "current_location": "G-10 Police Post",
+                "distance_to_G10_km": 0.3
+            },
+            {
+                "unit_id": "POLICE-I8",
+                "type": "Traffic Police Unit",
+                "status": "AVAILABLE",
+                "current_location": "I-8 Police Post",
+                "distance_to_G10_km": 1.2
+            },
+            {
+                "unit_id": "POLICE-F7",
+                "type": "Traffic Police Unit",
+                "status": "AVAILABLE",
+                "current_location": "F-7 Police Post",
+                "distance_to_G10_km": 2.5
+            },
+            {
+                "unit_id": "MED-01",
+                "type": "Medical Response Team",
+                "status": "AVAILABLE",
+                "current_location": "PIMS Hospital, G-8",
+                "distance_to_G10_km": 3.8
+            },
+            {
+                "unit_id": "COOL-01",
+                "type": "Cooling Relief Unit",
+                "status": "AVAILABLE",
+                "current_location": "CDA Office, F-7",
+                "distance_to_G10_km": 2.1
+            },
+            {
+                "unit_id": "ELEC-01",
+                "type": "IESCO Electricity Team",
+                "status": "AVAILABLE",
+                "current_location": "IESCO Office, I-9",
+                "distance_to_G10_km": 6.2
+            },
+            {
+                "unit_id": "ELEC-02",
+                "type": "IESCO Electricity Team",
+                "status": "AVAILABLE",
+                "current_location": "IESCO Sub-Station, I-8",
+                "distance_to_G10_km": 1.0
+            }
+        ]
+    }
+}

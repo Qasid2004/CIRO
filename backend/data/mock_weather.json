@@ -1,0 +1,35 @@
+{
+    "weather_alert": {
+        "timestamp": "2025-05-15T14:00:00",
+        "source": "Pakistan Meteorological Department",
+        "city": "Islamabad",
+        "alerts": [
+            {
+                "type": "HEAVY_RAINFALL",
+                "severity": "HIGH",
+                "description": "Heavy to very heavy rainfall expected. Urban flooding possible in low-lying areas.",
+                "affected_areas": [
+                    "G-10",
+                    "G-9",
+                    "F-10",
+                    "I-8"
+                ],
+                "start_time": "2025-05-15T13:00:00",
+                "end_time": "2025-05-15T20:00:00"
+            }
+        ],
+        "current_conditions": {
+            "rainfall_mm_per_hour": 42,
+            "rainfall_category": "VERY_HEAVY",
+            "wind_speed_kmh": 35,
+            "temperature_celsius": 27,
+            "humidity_percent": 94,
+            "visibility_km": 1.2
+        },
+        "forecast_next_3hrs": {
+            "rainfall_expected": true,
+            "expected_total_mm": 80,
+            "flood_risk": "HIGH"
+        }
+    }
+}

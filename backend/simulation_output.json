@@ -1,0 +1,192 @@
+{
+  "crisis": {
+    "type": "Urban Flooding",
+    "location": "G-10, Islamabad",
+    "severity": "Critical",
+    "confidence": "High",
+    "explanation": "5 social media posts + heavy rainfall alert (42mm/hr) + G-10 Main Boulevard fully blocked with 34 stranded vehicles all point to severe urban flooding in G-10.",
+    "affected_routes": [
+      "G-10 Main Boulevard",
+      "G-9 Kanal Road"
+    ],
+    "detected_at": "2026-05-20 14:01:02"
+  },
+  "actions": [
+    "Close G-10 Main Boulevard and redirect all traffic",
+    "Deploy Rescue Team RES-02 to G-10 immediately",
+    "Dispatch Ambulance AMB-07 via G-11 Link Road",
+    "Deploy Water Pump Truck PUMP-01 to G-10 drainage point",
+    "Station Traffic Police POLICE-G10 at G-10 entry points"
+  ],
+  "simulation": {
+    "routes": {
+      "R001": {
+        "name": "G-10 Main Boulevard",
+        "before_status": "BLOCKED",
+        "after_status": "CLOSED — EMERGENCY RESPONSE ACTIVE",
+        "before_speed": 0,
+        "after_speed": 0,
+        "before_congestion": 98,
+        "after_congestion": 98
+      },
+      "R002": {
+        "name": "G-9 Kanal Road",
+        "before_status": "SLOW",
+        "after_status": "MODERATE — TRAFFIC BEING DIVERTED",
+        "before_speed": 12,
+        "after_speed": 27,
+        "before_congestion": 74,
+        "after_congestion": 36
+      },
+      "R003": {
+        "name": "Islamabad Expressway",
+        "before_status": "CLEAR",
+        "after_status": "ACTIVE ALTERNATE ROUTE",
+        "before_speed": 80,
+        "after_speed": 80,
+        "before_congestion": 18,
+        "after_congestion": 0
+      },
+      "R004": {
+        "name": "G-11 Link Road",
+        "before_status": "CLEAR",
+        "after_status": "ACTIVE ALTERNATE ROUTE",
+        "before_speed": 55,
+        "after_speed": 55,
+        "before_congestion": 22,
+        "after_congestion": 0
+      }
+    },
+    "tickets": [
+      {
+        "id": "EMG-1001",
+        "unit_id": "AMB-07",
+        "type": "Ambulance",
+        "from": "Rescue Station, G-11",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 4,
+        "created_at": "14:01:26"
+      },
+      {
+        "id": "EMG-1002",
+        "unit_id": "RES-02",
+        "type": "Rescue Team",
+        "from": "Rescue 1122, G-10",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 3,
+        "created_at": "14:01:26"
+      },
+      {
+        "id": "EMG-1003",
+        "unit_id": "PUMP-01",
+        "type": "Water Pump Truck",
+        "from": "CDA Depot, I-9",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 11,
+        "created_at": "14:01:26"
+      },
+      {
+        "id": "EMG-1004",
+        "unit_id": "POLICE-G10",
+        "type": "Traffic Police Unit",
+        "from": "G-10 Police Post",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 3,
+        "created_at": "14:01:26"
+      },
+      {
+        "id": "EMG-1005",
+        "unit_id": "POLICE-I8",
+        "type": "Traffic Police Unit",
+        "from": "I-8 Police Post",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 3,
+        "created_at": "14:01:26"
+      },
+      {
+        "id": "EMG-1006",
+        "unit_id": "POLICE-F7",
+        "type": "Traffic Police Unit",
+        "from": "F-7 Police Post",
+        "to": "G-10, Islamabad",
+        "status": "DISPATCHED",
+        "eta_mins": 5,
+        "created_at": "14:01:26"
+      }
+    ],
+    "alerts": [
+      {
+        "channel": "SMS Broadcast",
+        "message": "EMERGENCY ALERT: Severe flooding in G-10 Islamabad. Avoid G-10 Main Boulevard. Use Islamabad Expressway or G-11 Link Road as alternate routes. Emergency services deployed.",
+        "sent_to": "5,200 users in G-10 area",
+        "status": "SENT",
+        "timestamp": "14:01:26"
+      },
+      {
+        "channel": "WhatsApp Broadcast",
+        "message": "ZARURI ITLAA: G-10 Islamabad mein shadeed saili. G-10 Main Boulevard se bachein. Islamabad Expressway ya G-11 Link Road use karein. Emergency services aa rahi hain.",
+        "sent_to": "3,800 users in G-10 area",
+        "status": "SENT",
+        "timestamp": "14:01:26"
+      },
+      {
+        "channel": "Traffic App Notification",
+        "message": "ROAD CLOSED: G-10 Main Boulevard. Use alternate routes.",
+        "sent_to": "12,500 active app users",
+        "status": "SENT",
+        "timestamp": "14:01:26"
+      }
+    ]
+  },
+  "outcome": {
+    "congestion_before": 53,
+    "congestion_after": 24,
+    "response_time_minutes": 3,
+    "units_deployed": 6,
+    "alerts_sent": 3,
+    "routes_updated": 4,
+    "status": "IN_PROGRESS",
+    "summary": "Emergency response successfully initiated for Urban Flooding in G-10, Islamabad. 6 units deployed with first responder ETA of 3 minutes. Traffic congestion reduced from 53% to 24% through alternate route activation. Public alerts dispatched to over 21,000 residents."
+  },
+  "logs": [
+    "[14:00:12] Agent 1: Starting signal collection...",
+    "[14:00:12] Agent 1: Sending signals to Gemini for analysis...",
+    "[14:00:37] Agent 1: LLM Error: ERROR_UNKNOWN: All keys exhausted.",
+    "[14:00:37] Agent 1: Used fallback data due to LLM error.",
+    "[14:00:37] Agent 2: Starting crisis detection...",
+    "[14:00:37] Agent 2: Analyzing combined signals with Gemini...",
+    "[14:01:02] Agent 2: LLM Error: ERROR_UNKNOWN: All keys exhausted.",
+    "[14:01:02] Agent 2: Used fallback crisis data due to LLM error.",
+    "[14:01:02] Agent 3: Starting action planning...",
+    "[14:01:02] Agent 3: Generating response plan with Gemini...",
+    "[14:01:26] Agent 3: LLM Error: ERROR_UNKNOWN: All keys exhausted.",
+    "[14:01:26] Agent 3: Used fallback action plan due to LLM error.",
+    "[14:01:26] Agent 4: Starting execution simulation...",
+    "[14:01:26] Agent 4: Updating route statuses...",
+    "[14:01:26] Agent 4: Route G-10 Main Boulevard: BLOCKED → CLOSED — EMERGENCY RESPONSE ACTIVE",
+    "[14:01:26] Agent 4: Route G-9 Kanal Road: SLOW → MODERATE — TRAFFIC BEING DIVERTED",
+    "[14:01:26] Agent 4: Route Islamabad Expressway: CLEAR → ACTIVE ALTERNATE ROUTE",
+    "[14:01:26] Agent 4: Route G-11 Link Road: CLEAR → ACTIVE ALTERNATE ROUTE",
+    "[14:01:26] Agent 4: Dispatching emergency resources...",
+    "[14:01:26] Agent 4: Ticket EMG-1001 created — Ambulance dispatched from Rescue Station, G-11",
+    "[14:01:26] Agent 4: Ticket EMG-1002 created — Rescue Team dispatched from Rescue 1122, G-10",
+    "[14:01:26] Agent 4: Ticket EMG-1003 created — Water Pump Truck dispatched from CDA Depot, I-9",
+    "[14:01:26] Agent 4: Ticket EMG-1004 created — Traffic Police Unit dispatched from G-10 Police Post",
+    "[14:01:26] Agent 4: Ticket EMG-1005 created — Traffic Police Unit dispatched from I-8 Police Post",
+    "[14:01:26] Agent 4: Ticket EMG-1006 created — Traffic Police Unit dispatched from F-7 Police Post",
+    "[14:01:26] Agent 4: Sending public alerts...",
+    "[14:01:26] Agent 4: Alert sent via SMS Broadcast to 5,200 users in G-10 area",
+    "[14:01:26] Agent 4: Alert sent via WhatsApp Broadcast to 3,800 users in G-10 area",
+    "[14:01:26] Agent 4: Alert sent via Traffic App Notification to 12,500 active app users",
+    "[14:01:26] Agent 4: Calculating outcome...",
+    "[14:01:26] Agent 4: Congestion reduced: 53% → 24%",
+    "[14:01:26] Agent 4: First responder ETA: 3 minutes",
+    "[14:01:50] Agent 4: Outcome: Emergency response successfully initiated for Urban Flooding in G-10, Islamabad. 6 units deployed with first responder ETA of 3 minutes. Traffic congestion reduced from 53% to 24% through alternate route activation. Public alerts dispatched to over 21,000 residents.",
+    "[14:01:50] Agent 4: ✅ Done. Full pipeline complete."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "posts": [
+        {
+            "id": "post_001",
+            "timestamp": "2025-05-15T14:32:00",
+            "platform": "Twitter",
+            "text": "G-10 mein pani bhar gaya hai, gaariyan phans gayi hain! Koi help karo!",
+            "location": "G-10, Islamabad",
+            "language": "roman_urdu"
+        },
+        {
+            "id": "post_002",
+            "timestamp": "2025-05-15T14:35:00",
+            "platform": "Twitter",
+            "text": "Flash flood happening at G-10 for past 30 mins, road completely blocked",
+            "location": "G-10, Islamabad",
+            "language": "english"
+        },
+        {
+            "id": "post_003",
+            "timestamp": "2025-05-15T14:38:00",
+            "platform": "Facebook",
+            "text": "Bahut tez baarish ho rahi hai G-10 markaz ke paas, nالے بھر گئے ہیں",
+            "location": "G-10 Markaz, Islamabad",
+            "language": "urdu_mixed"
+        },
+        {
+            "id": "post_004",
+            "timestamp": "2025-05-15T14:40:00",
+            "platform": "Twitter",
+            "text": "Ambulance cannot pass through G-10 main boulevard, water level rising",
+            "location": "G-10, Islamabad",
+            "language": "english"
+        },
+        {
+            "id": "post_005",
+            "timestamp": "2025-05-15T14:45:00",
+            "platform": "WhatsApp",
+            "text": "G10 walon ko batana, neeche wali road band hai, upar se aao",
+            "location": "G-10, Islamabad",
+            "language": "roman_urdu"
+        }
+    ]
+}

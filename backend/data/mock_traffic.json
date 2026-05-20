@@ -1,0 +1,64 @@
+{
+    "traffic_report": {
+        "timestamp": "2025-05-15T14:45:00",
+        "city": "Islamabad",
+        "routes": [
+            {
+                "route_id": "R001",
+                "name": "G-10 Main Boulevard",
+                "from": "G-10 Markaz",
+                "to": "Srinagar Highway",
+                "status": "BLOCKED",
+                "congestion_level": "CRITICAL",
+                "congestion_score": 98,
+                "average_speed_kmh": 0,
+                "normal_speed_kmh": 60,
+                "incident": "Urban flooding — water level 2ft",
+                "vehicles_stranded": 34
+            },
+            {
+                "route_id": "R002",
+                "name": "G-9 Kanal Road",
+                "from": "G-9 Markaz",
+                "to": "Srinagar Highway",
+                "status": "SLOW",
+                "congestion_level": "HIGH",
+                "congestion_score": 74,
+                "average_speed_kmh": 12,
+                "normal_speed_kmh": 60,
+                "incident": "Spillover traffic from G-10 blockage",
+                "vehicles_stranded": 0
+            },
+            {
+                "route_id": "R003",
+                "name": "Islamabad Expressway",
+                "from": "G-10 Interchange",
+                "to": "Zero Point",
+                "status": "CLEAR",
+                "congestion_level": "LOW",
+                "congestion_score": 18,
+                "average_speed_kmh": 80,
+                "normal_speed_kmh": 100,
+                "incident": null,
+                "vehicles_stranded": 0
+            },
+            {
+                "route_id": "R004",
+                "name": "G-11 Link Road",
+                "from": "G-11",
+                "to": "Srinagar Highway",
+                "status": "CLEAR",
+                "congestion_level": "LOW",
+                "congestion_score": 22,
+                "average_speed_kmh": 55,
+                "normal_speed_kmh": 60,
+                "incident": null,
+                "vehicles_stranded": 0
+            }
+        ],
+        "emergency_access": {
+            "G-10 Main Boulevard": "BLOCKED",
+            "alternate_emergency_route": "G-11 Link Road → Islamabad Expressway"
+        }
+    }
+}
