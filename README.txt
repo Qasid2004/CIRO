@@ -143,73 +143,8 @@ CIRO/
 
 ---
 
-## How to Run
-
-### Install dependencies
-```bash
-pip install google-genai google-adk
-```
-
-### Add API Key
-Open `core/llm_client.py` and add your Gemini API key:
-```python
-API_KEYS = ["YOUR_GEMINI_API_KEY"]
-```
-
-### Run the pipeline
-```bash
-python main.py
-```
-
-### Run with Antigravity orchestration
-```bash
-python antigravity.py
-```
-
----
-
-## Input Format
-
-Edit the `crisis_reports` list in `main.py`:
-
-```python
-crisis_reports = [
-    "G-10 mein pani bhar gaya hai, gaariyan phans gayi hain!",
-    "F-7 mein bohot tez garmi hai, 3 log heat stroke se hospital gaye",
-    "I-8 mein bijli ka khamba gir gaya hai, live wires hain road pe"
-]
-```
-
 Supports English, Roman Urdu, and mixed language input.
 
----
-
-## Output
-
-Each run produces:
-- Terminal logs showing agent reasoning in real time
-- `simulation_output.json` — full structured output for UI
-
-```json
-{
-  "crisis": { "type": "Urban Flooding", "severity": "Critical", "confidence": "High" },
-  "actions": ["Deploy RES-02...", "Dispatch PUMP-01..."],
-  "simulation": { "tickets": [...], "alerts": [...], "routes": {...} },
-  "outcome": { "congestion_before": 53, "congestion_after": 17 },
-  "logs": ["Agent 1: Collected 11 signals...", "Agent 2: Crisis identified..."]
-}
-```
-
----
-
-## Assumptions
-
-- Weather, traffic, and resource data are simulated via mock JSON files
-- Real PMD, traffic, and dispatch APIs would replace mock data in production
-- Gemini free tier used with automatic key rotation for quota management
-- Emergency unit locations and ETAs are approximate simulations
-
----
 
 ## Team
 
